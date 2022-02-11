@@ -104,7 +104,7 @@ def write_systems(vapps):
     for base_name, vapp_data in vapps.items():
         for system, system_data in vapp_data['systems'].items():
             host = system_data['host']
-            db.insert('system', ['system', 'vapp', 'host'],
+            db.insert('systems', ['system', 'vapp', 'host'],
                       (system, base_name, host,))
 
 def write_teams(teams):

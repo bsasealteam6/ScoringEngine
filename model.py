@@ -191,7 +191,7 @@ class Model(object):
             List(System): A list of systems
         """
         systems = []
-        system_rows = db.getall('system')
+        system_rows = db.getall('systems')
         for system_name, vapp_name, host in system_rows:
             schecks = []
             for check, sid in checks:

@@ -15,8 +15,8 @@ CREATE TABLE `vapp` (
     `subnet` VARCHAR(15) NOT NULL,
     `netmask` VARCHAR(15) NOT NULL);
 
-DROP TABLE IF EXISTS `system`;
-CREATE TABLE `system` (
+DROP TABLE IF EXISTS `systems`;
+CREATE TABLE `systems` (
     `system` VARCHAR(255) PRIMARY KEY,
     `vapp` VARCHAR(255) NOT NULL,
     `host` INT NOT NULL,

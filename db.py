@@ -103,7 +103,7 @@ def reset_all_tables():
     """
     reset_table('settings')
     reset_table('vapp')
-    reset_table('system')
+    reset_table('systems')
     reset_table('team')
     reset_table('users')
     reset_table('domain')
