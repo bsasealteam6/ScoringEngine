@@ -43,11 +43,11 @@ DROP TABLE IF EXISTS `service_check`;
 CREATE TABLE `service_check` (
     `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     `name` VARCHAR(255) NOT NULL UNIQUE,
-    `system` VARCHAR(255) NOT NULL,
+    `systems` VARCHAR(255) NOT NULL,
     `port` INT NOT NULL,
     `check_function` VARCHAR(255) NOT NULL,
     `poller` VARCHAR(255) NOT NULL,
-    FOREIGN KEY (`system`) REFERENCES `system`(`system`)
+    FOREIGN KEY (`systems`) REFERENCES `systems`(`systems`)
         ON DELETE CASCADE);
 
 DROP TABLE IF EXISTS `domain`;

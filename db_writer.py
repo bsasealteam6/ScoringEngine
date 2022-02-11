@@ -187,7 +187,7 @@ def write_checks(vapps):
                     checker = get_checker(check_type, checker)
             
                     db_id = db.insert('service_check',
-                        ['name', 'port', 'check_function', 'poller', 'system'],
+                        ['name', 'port', 'check_function', 'poller', 'systems'],
                         (name, port, checker, poller, system))
                     check_ids[name] = db_id
     return check_ids
