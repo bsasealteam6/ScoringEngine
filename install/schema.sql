@@ -17,7 +17,7 @@ CREATE TABLE `vapp` (
 
 DROP TABLE IF EXISTS `systems`;
 CREATE TABLE `systems` (
-    `system` VARCHAR(255) PRIMARY KEY,
+    `systems` VARCHAR(255) PRIMARY KEY,
     `vapp` VARCHAR(255) NOT NULL,
     `host` INT NOT NULL,
     FOREIGN KEY (`vapp`) REFERENCES `vapp`(`base_name`)
